@@ -4,6 +4,15 @@ from sorl.thumbnail import ImageField
 from django.template.defaultfilters import slugify
 from unidecode import unidecode
 from django.conf import settings
+from custom_user.models import AbstractEmailUser
+
+
+class Customer(AbstractEmailUser):
+    """
+    Example of an EmailUser with a new field date_of_birth
+    """
+    date_of_birth = models.DateField(null=True, blank=True)
+    telephone = models.CharField(max_length=64, default="")
 
 
 class Country(models.Model):

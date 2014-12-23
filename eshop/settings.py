@@ -62,7 +62,7 @@ WSGI_APPLICATION = 'eshop.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'eshop',
+        'NAME': 'eshop_db',
         'USER': 'chris',
         'PASSWORD': 'tre5183',
     }
@@ -91,4 +91,4 @@ STATIC_ROOT = os.path.join(BASE_DIR, "static")
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 
-AUTH_USER_MODEL = 'account.Customer'
+AUTH_USER_MODEL = 'main.Customer'

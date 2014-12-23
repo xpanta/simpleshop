@@ -1,6 +1,6 @@
 from django.contrib import admin
 from custom_user.admin import EmailUserAdmin
-from account.models import Customer
+from main.models import Customer
 
 
 class CustomerAdmin(EmailUserAdmin):
